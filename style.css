@@ -916,6 +916,9 @@ footer .btn:hover {
     margin: 20px;
     /* align-self: center; */
   }
+  body {
+    padding: 20px 10px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
