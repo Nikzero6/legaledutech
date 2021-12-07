@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+  <title>LegalEduTech</title>
+  <meta name="desciption" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="subjects.css">
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+  <script>
+    ! function(e, t, a) {
+      var c = e.head || e.getElementsByTagName("head")[0],
+        n = e.createElement("script");
+      n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/chat_widget.js?config=" + JSON.stringify(a), c.appendChild(n)
+    }(document, "https://app.engati.com", {
+      bot_key: "b9368f80439e4de6",
+      welcome_msg: true,
+      branding_key: "default",
+      server: "https://app.engati.com",
+      e: "p"
+    });
+  </script>
+  <!-- NAVIGATION -->
+  <header>
+    <div class="nav" id="nav">
+      <div id="learned-logo">
+        <a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a>
+      </div>
+      <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+      <ul id="list-switch">
+        <li><a href="#"><img src="../images/courses/d1.png" class="icon">JEE</a></li>
+        <li><a href="gate.html"><img src="../images/courses/paper.png" class="icon">GATE</a></li>
+        <li><a href="computer_courses.html"><img src="../images/courses/computer.png" class="icon">Computer Courses</a></li>
+        <li><a href="computer_courses.html#data"><img src="../images/courses/data.png" class="icon">Data Structures</a></li>
+        <li><a href="computer_courses.html#algo"><img src="../images/courses/algo.png" class="icon">Algorithm</a></li>
+        <li><a href="computer_courses.html#projects"><img src="../images/courses/projects.png" class="icon">Projects</a></li>
+      </ul>
+      <div class="search" id="search-switch">
+        <input type="text" placeholder="Search" class="srch"><button id="srchbtn"><img src="../images/icon/search.png"></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="title">
+    <span>Sample Paper 1 Set-A 2021</span>
+    <div class="shortdesc">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et egestas nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+    </div>
+  </div>
+  <div style="justify-content: center; display: flex;">
+    <img style="width: 80%" src="https://i.ibb.co/V3T4S8L/p1.jpg" alt="p1" border="0">
+  </div>
+
+  <div id="adobe-dc-view" style="width: 100%;"></div>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function() {
+      var adobeDCView = new AdobeDC.View({
+        clientId: "a41f7a6889da4dedbbc535e653c23681",
+        divId: "adobe-dc-view"
+      });
+      adobeDCView.previewFile({
+        content: {
+          location: {
+            url: "https://app.retainiq.io/p1.pdf"
+          }
+        },
+        metaData: {
+          fileName: "Sample Paper 1.pdf"
+        }
+      }, {
+        embedMode: "IN_LINE",
+        showDownloadPDF: false,
+        showPrintPDF: false,
+        showAnnotationTools: false,
+        showLeftHandPanel: false
+      });
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="left-col">
+        <img src="../images/icon/logo.png" style="width: 200px;">
+        <div class="logo"></div>
+        <div class="social-media">
+          <a href="#"><img src="../images/icon\fb.png"></a>
+          <a href="#"><img src="../images/icon\insta.png"></a>
+          <a href="#"><img src="../images/icon\tt.png"></a>
+          <a href="#"><img src="../images/icon\ytube.png"></a>
+          <a href="#"><img src="../images/icon\linkedin.png"></a>
+        </div><br><br>
+        <p class="rights-text">Copyright © 2021 Created By Nikhil Rai All Rights Reserved.</p>
+        <br>
+        <p><img src="../images/icon/location.png"> Lorem ipsum generator, dolor si met<br>jan hul-hon lip sih monk</p><br>
+        <p><img src="../images/icon/phone.png"> +91-1234-567-890<br><img src="../images/icon/mail.png">&nbsp; LegalEduTech@gmail.com</p>
+      </div>
+      <div class="right-col">
+        <h1 style="color: #fff">Our Newsletter</h1>
+        <div class="border"></div><br>
+        <p>Enter Your Email to get our News and updates.</p>
+        <form class="newsletter-form">
+          <input class="txtb" type="email" placeholder="Enter Your Email">
+          <input class="btn" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // this will disable dragging of all images
+    $("img").mousedown(function(e) {
+      e.preventDefault()
+    });
+
+    // this will disable right-click on all images
+    $("body").on("contextmenu", function(e) {
+      return false;
+    });
+  </script>
+</body>
+
+</html>
